@@ -12,7 +12,16 @@
     <!--El modal se tiene que abrir manualmente con JS-->
     <dialog id="modalAgregar" open>
         <article>
-            
+            <header>
+                <a href="#" class="close" id="btnCerrarModal"></a>
+                <h3>Agregar persona</h3>
+            </header>
+            <form id="frmAgregarPersona">
+                <input type="text" id="nombre" placeholder="Nombre" required>
+                <input type="text" id="edad" placeholder="Edad" required>
+                <input type="email" id="correo" placeholder="Correo" required>
+                <button type="submit" class="contrast">Guardar</button>
+            </form>
         </article>
     </dialog>
 
