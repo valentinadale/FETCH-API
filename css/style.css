@@ -38,3 +38,7 @@ body{
 .add-button:hover{
     transform: scale(1.1);
 }
+
+.tabla-scroll{
+    overflow-x: auto;
+}
