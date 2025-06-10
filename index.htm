@@ -58,8 +58,27 @@
             </header>
             <form id="frmAgregarPersona">
                 <input type="text" id="nombre" placeholder="Nombre" required>
-                <input type="text" id="edad" placeholder="Edad" required>
+                <input type="number" id="edad" placeholder="Edad" required>
                 <input type="email" id="correo" placeholder="Correo" required>
+                <button type="submit" class="contrast">Guardar</button>
+            </form>
+        </article>
+    </dialog>
+
+
+    <!--Modal para editar-->
+    <dialog id="modalEditar">
+        <article>
+            <header>
+                <a href="#" class="close" id="btnCerrarEditar"></a>
+                <h3>Editar información de persona</h3>
+            </header>
+            <form id="frmEditarPersona">
+                <!-- input:hidden es como un label oculto que va a almacear el id-->
+                <input type="hidden" id="idEditar">
+                <input type="text" id="nombreEditar" placeholder="Nombre" required>
+                <input type="text" id="edadEditar" placeholder="Edad" required>
+                <input type="email" id="correoEditar" placeholder="Correo" required>
                 <button type="submit" class="contrast">Guardar</button>
             </form>
         </article>
